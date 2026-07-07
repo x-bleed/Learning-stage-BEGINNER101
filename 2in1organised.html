@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics Reference</title>
+    <!-- 
+      This file merges two practice sessions into one organized reference:
+      1. Semantic structure (nav, header, main, section, aside, article, footer, media)
+      2. Text, lists, links, images, forms
+
+      Always save before running. Use Alt+Z for word wrap in VS Code.
+      Emmet shortcut: ! + Tab generates the boilerplate structure above.
+    -->
+</head>
+<body>
+
+    <!-- ============================= -->
+    <!-- PART 1: SEMANTIC PAGE STRUCTURE -->
+    <!-- ============================= -->
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <h1>This is a division (non-semantic container)</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>That's another paragraph.</p>
+    </div>
+
+    <header>
+        <h1>This is the header</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae eius cum vel nulla in quo dolorem.</p>
+    </header>
+
+    <main>
+        <h3>Main holds the dominant, unique content of the page.</h3>
+
+        <!-- section = a semantic element for grouping main content. Header/main/footer can go anywhere. -->
+        <section>
+            <p><strong>This is main content under a section tag.</strong></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae eius cum vel nulla in quo dolorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae eius cum vel nulla in quo dolorem.</p>
+        </section>
+
+        <section>
+            <p><strong>Another section, this time with lists.</strong></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae eius cum vel nulla in quo dolorem.</p>
+
+            <ol>
+                <li>Messi</li>
+                <li>Ronaldo</li>
+                <li>Neuer</li>
+            </ol>
+            <ul>
+                <li>Messi</li>
+                <li>Ronaldo</li>
+                <li>Pele</li>
+            </ul>
+        </section>
+
+        <section>
+            <p><strong>Audio and video elements.</strong></p>
+
+            <audio controls>
+                <source src="media/goal-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element. This only works on a live server (XAMPP, WAMP, or the VS Code Live Server extension).
+            </audio>
+
+            <!--<video controls width="500" height="300">
+                <source src="media/cooking-vid.mp4" type="video/mp4">
+                Your browser does not support the video tag. This only works on a live server too.
+            </video>-->
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7KRabLH7jcE?si=N9Xr3k8-Wuzme7HI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <em>That's a video embedded directly from another website.</em>
+        </section>
+
+        <article>
+            <p><strong>This is an article, standalone content that could stand on its own (like a blog post).</strong></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae eius cum vel nulla in quo dolorem.</p>
+            <p><strong>Note:</strong> Article ends here.</p>
+        </article>
+    </main>
+
+    <aside>
+        <p><strong>This is an aside, extra info related to the page but not core content.</strong></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae eius cum vel nulla in quo dolorem.</p>
+        <p><strong>Note:</strong> Aside ends here.</p>
+    </aside>
+
+    <!-- ============================= -->
+    <!-- PART 2: TEXT, LISTS, LINKS, MEDIA -->
+    <!-- ============================= -->
+
+    <section>
+        <h2>Text formatting</h2>
+
+        <h1>Biggest heading available (h1)</h1>
+        <h2>A smaller heading (h2)</h2>
+        <h3>h3, smaller than h2 but bigger than h4</h3>
+        <h4>h4, smaller than h3 but bigger than h5</h4>
+        <h5>h5, smaller than h4 but bigger than h6</h5>
+        <h6>h6, the smallest heading available</h6>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur <b>adipisicing</b> elit. Distinctio perferendis veniam
+            exercitationem vero tempora libero mollitia quo dignissimos consequuntur atque reprehenderit rem,
+            voluptate debitis odit laborum illo aperiam doloremque sunt qui labore illum eius ducimus consequatur
+            fugit! Reprehenderit, error temporibus nam cumque ab deleniti molestias voluptatibus quasi possimus.
+            Aliquid, quam!
+        </p>
+
+        <strong>This is strong text. Semantically it means "important," unlike the old bold tag.</strong>
+        <br>
+        <i>This is italic text.</i>
+        <br>
+        <strong>This is strong text again.</strong>
+        <em>This is emphasized text. Without a line break, these sit on the same line, same as with the italic tag above.</em>
+    </section>
+
+    <section>
+        <h2>Lists</h2>
+        <ol>
+            <li>First list item</li>
+            <li>Second list item</li>
+            <li>Third list item</li>
+        </ol>
+
+        <ul>
+            <li>First unordered list item</li>
+            <li>Second unordered list item</li>
+            <li>Third unordered list item</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Links and images</h2>
+        <a href="https://www.google.com">Google</a><br>
+        <a href="https://www.youtube.com">This is an anchor text for YouTube</a>
+
+        <!-- image and html file need to be in the same directory for a relative path like this to work -->
+        <img src="strawberry.jpg" alt="ripe red strawberry with green leaves resting on a white surface" width="500" height="333">
+
+        <!-- image pulled from an external source -->
+        <img src="https://cdn.pixabay.com/photo/2015/01/26/22/40/child-613199_1280.jpg" alt="football player sprinting on a grassy field in a bright outdoor stadium" width="500" height="333">
+
+        <p>If you're feeling like procrastinating, <a href="https://www.youtube.com">visit YouTube</a>.</p>
+    </section>
+
+    <section>
+        <h2>Form inputs (standalone examples)</h2>
+        <input type="text" placeholder="Enter your name here"><br>
+        <input type="password" name="password" placeholder="Enter password"><br>
+        <input type="date" name="dob">
+    </section>
+
+    <section>
+        <h2>A complete form</h2>
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Enter your message here... you can write as much as you want."></textarea><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <input type="button" value="Click Me" onclick="alert('Button clicked!')">
+        </form>
+    </section>
+
+    <h1>Inline vs block elements</h1>
+    <p>Worth reviewing separately: block elements (div, p, h1-h6, section, form) always start on a new line and take full width. Inline elements (a, strong, em, span, img) only take up as much width as their content and sit in the flow of text.</p>
+
+    <footer>
+        <p>End of reference file. Built from two Programming Hero practice sessions.</p>
+    </footer>
+
+</body>
+</html>
