@@ -1,0 +1,76 @@
+/* Combine & conquer::
+    .card.title --> any .title inside any .card
+    div,btn:hover--> a dive with class btn when hovered
+    ul > li --> any li that is a direct child (1 level deep)of(/under) ul
+    .btn .cta --> same styles applies for any element with class cta inside any element with class btn
+/* Style for the media section */
+* {
+    box-sizing: border-box;
+   }
+section, article, aside, header, footer, nav {
+        background-color: lightgray;
+        border: 1px solid #ccc;
+        padding: 10px; /* Add padding for better readability and both padding & border allow the to left,right,top & bottom manually in each. same goes to margin. for margin, margin: left right top bottom;. padding works inside of the border and margin works outside of the border, that's box model.*/
+        margin-bottom: 10px;
+        text-align: Justify;
+        }
+body {
+        /* background-color:  lightblue; */
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+        }
+nav ul {
+        text-align: right;
+        padding: 0;
+     
+        }
+nav ul li {
+        display: inline;
+        margin-right: 10px;
+        }
+nav a{
+        color: inherit;
+        text-decoration: none;
+        }
+.active {
+        color: red;
+        }
+.bold {
+        font-weight: bold;
+        }
+section {
+        margin-bottom: 20px;
+        }
+.page-header { 
+        /* width: 50%; */
+        font-size: 30px;
+        height: 20rem;
+        text-align: center;
+        background-color: #f4f4f4;
+        padding: 10px;
+        border: 1px solid #ccc;
+        }
+#main-nav {
+        margin-bottom: 20px;
+        }
+.main{
+        color: red;
+        }
+footer > div {
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        background-color: #f4f4f4;
+        border-top: 1px solid #ccc;
+        }
+article > p {
+            color: rgb(55, 193, 136);
+        }
+#media-section {
+            /* width: 50%; */
+            background-color: #e0e0e0;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
