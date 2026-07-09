@@ -8,7 +8,7 @@
     box-sizing: border-box;
    }
 section, article, aside, header, footer, nav {
-        background-color: lightgray;
+        background-color: none;
         border: 1px solid #ccc;
         padding: 10px; /* Add padding for better readability and both padding & border allow the to left,right,top & bottom manually in each. same goes to margin. for margin, margin: left right top bottom;. padding works inside of the border and margin works outside of the border, that's box model.*/
         margin-bottom: 10px;
@@ -19,7 +19,7 @@ body {
         /* background-color:  lightblue; */
         font-family: Arial, sans-serif;
         line-height: 1.6;
-        margin: 20px;
+        margin: 15px;
         }
 nav ul{
         display: inline-flex; /* Use inline-flex for horizontal navigation. */
@@ -122,11 +122,14 @@ footer > div {
         box-shadow: 20px 20px 50px black; /* Add a subtle shadow for depth. */
 }
 #media-section {
-            /* width: 50%; */
             background-color: #e0e0e0;
             padding: 10px;
             display: flex;
             flex-direction: column;
+        }
+#media-section video {
+            width: 100%;
+            height: auto;
         }
 #links-images {
             background-color: #f9f9f9;
