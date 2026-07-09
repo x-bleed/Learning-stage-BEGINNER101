@@ -1,0 +1,6 @@
+/* Combine & conquer::
+    .card.title --> any .title inside any .card
+    div,btn:hover--> a dive with class btn when hovered
+    ul > li --> any li that is a direct child (1 level deep)of(/under) ul
+    .btn .cta --> same styles applies for any element with class cta inside any element with class btn
+/* Style for the media section */
