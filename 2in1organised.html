@@ -13,7 +13,7 @@
       Always save before running. Use Alt+Z for word wrap in VS Code.
       Emmet shortcut: ! + Tab generates the boilerplate structure above.
     -->
-    <style>
+    <!-- <style>
         * {
             box-sizing: border-box;
         }
@@ -85,8 +85,8 @@
             flex-direction: column;
         }
         /* Inline CSS for demonstration purposes, consider using an external stylesheet for larger projects.*/
-    </style>
-    <link rel="stylesheet" href="style.css">
+    </style> -->
+    <link rel="stylesheet" href="style/style.css">
 </head> 
 <body>
 
@@ -95,6 +95,13 @@
     <!-- ============================= -->
 
     <nav id="main-nav">
+       <div class="nav-logo">
+         <img src="images/Charizard Png Image.jpg"   class="nav-logo-img" alt="Logo">
+          <div class="nav-header">
+              <h1>My Navigation.</h1>
+              <h6> where my first learning things you can find.</h6>
+          </div>
+       </div>
         <ul>
             <li><a href="#">Home</a></li>
             <li class="active bold"><a href="#">About</a></li>
@@ -113,8 +120,8 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae eius cum vel nulla in quo dolorem.</p>
     </header>
 
-    <main class="main1">
-        <h3 class="main">Main holds the dominant, unique content of the page.</h3>
+    <main class="MAIN">
+        <h3 class="title1-in-main">Main holds the dominant, unique content of the page.</h3>
 
         <!-- section = a semantic element for grouping main content. Header/main/footer can go anywhere. -->
         <section>
@@ -219,16 +226,16 @@
         </ul>
     </section>
 
-    <section>
+    <section id="links-images">
         <h2>Links and images</h2>
         <a href="https://www.google.com">Google</a><br>
         <a href="https://www.youtube.com">This is an anchor text for YouTube</a>
 
         <!-- image and html file need to be in the same directory for a relative path like this to work -->
-        <img src="strawberry.jpg" alt="ripe red strawberry with green leaves resting on a white surface" width="500" height="333">
+        <!-- <img src="strawberry.jpg" alt="ripe red strawberry with green leaves resting on a white surface" width="500" height="333"> -->
 
         <!-- image pulled from an external source -->
-        <img src="https://cdn.pixabay.com/photo/2015/01/26/22/40/child-613199_1280.jpg" alt="football player sprinting on a grassy field in a bright outdoor stadium" width="500" height="333">
+        <img src="https://cdn.pixabay.com/photo/2015/01/26/22/40/child-613199_1280.jpg" alt="football player sprinting on a grassy field in a bright outdoor stadium">
 
         <p>If you're feeling like procrastinating, <a href="https://www.youtube.com">visit YouTube</a>.</p>
     </section>
@@ -240,7 +247,7 @@
         <input type="date" name="dob">
     </section>
 
-    <section>
+    <section class="form-section">
         <h2>A complete form</h2>
         <form action="submit.php" method="post">
             <label for="name">Name:</label>
@@ -262,11 +269,10 @@
     <p>Worth reviewing separately: block elements (div, p, h1-h6, section, form) always start on a new line and take full width. Inline elements (a, strong, em, span, img) only take up as much width as their content and sit in the flow of text.</p>
 
     <footer>
-        <p>End of reference file. Built from two Programming Hero practice sessions.
+        <p>End of reference file. Built from two Programming Hero practice sessions. </p>
             <div>
-                <p>fahad, all rights reserved.</p>
+                <p>© 2026 Fahad. All Rights Reserved.</p>
             </div>
-        </p>
     </footer>
 
 </body>
